@@ -37,10 +37,11 @@ get_header();
                 <div class="title">
                     <h3>SHOYU RAMEN</h3>
                     <p>Den här drinken är utan tvekan den perfekta pricken över i:et av esmorzaret, samtidigt som den är en...</p>
-                    <a href="#">READ MORE</a>
+                    <a href="<?php the_permalink();?>">READ MORE</a>
                 </div>
                 </div>
             </div>
+            
             <div class="col-lg-4">
                 <div class="recipe-action">
                 <div class="recipe-image2"></div>

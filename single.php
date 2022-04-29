@@ -74,7 +74,7 @@ if ( have_posts() ) :
         </div>
     </div>
 
-    </div><!-- #content -->
+    	</div><!-- #content -->
 	<?php if( $featured_image ): ?>
 			<img class="featured_image" src="<?php echo $featured_image['url']; ?>" alt="<?php echo $featured_image['alt']; ?>" />
 		<?php endif; ?>
@@ -90,6 +90,8 @@ if ( have_posts() ) :
 		<?php if( $instructions ): ?>
 		<?php echo print_r($instructions);?>
 		<?php endif; ?>
+
+
 
 <?php
     endwhile;
