@@ -50,7 +50,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
             <div class="col-sm">
               <div class="search-holder">
-                <div class="search">Search</div>
+                <div class="search">Jacob Nilsson</div>
               </div>
             </div>
             <div class="col col-lg-2">
