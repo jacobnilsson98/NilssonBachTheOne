@@ -16,13 +16,7 @@ body{
     line-height: 1.5;
 }
 
-//hero img
-.home-hero{
-    height: 1080px;
-    background: #ccc;
-    background-image: url(./img/banner.jpg);
-    background-size: cover;
-}
+
 
 //nav på toppen
 
@@ -82,4 +76,50 @@ body{
     }
 }
 
+
+//hero img
+.home-hero{
+    height: 630px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(./img/banner.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+    @media(max-width:$lg){
+        background-position: top -50px center;
+        height: 500px;
+    }
+   
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+      font-size: 100px;
+      @media(max-width:$lg){
+        font-size: 72px;
+      } 
+      @media(max-width:$md){
+        font-size: 48px;
+      } 
+      @media(max-width:$sm){
+        font-size: 36px;
+      } 
+  }
+
+
+  .home-recipes{
+      .recipe{
+          padding-bottom: 100%;
+          background: grey;
+          border-radius: 0%;
+          .image()
+      }
+  }
 
