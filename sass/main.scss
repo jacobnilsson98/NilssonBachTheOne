@@ -4,6 +4,12 @@
 @import "picostrap";  
 @import "woocommerce";
 
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1440px;
+
 body{
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 18px;
@@ -23,7 +29,11 @@ body{
 
 
 #wrapper-navbar{
+    
     .top-header-holder{
+        @media(max-width:$lg){
+            display: none;
+        }
         height: 160px;
         background: #f1f1f1;
         padding-top: 50px;
@@ -31,6 +41,7 @@ body{
         .container{
             
             .logo-holder{
+                
                 .logo{
                     width: 275px;
                     height: auto;
@@ -62,7 +73,7 @@ body{
                 a{
                     font-weight: 400;
                     font-size: 21px;
-                   
+                    
      
                     
                 }
@@ -70,3 +81,5 @@ body{
         }
     }
 }
+
+

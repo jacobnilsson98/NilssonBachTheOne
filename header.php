@@ -44,9 +44,9 @@ defined( 'ABSPATH' ) || exit;
         <div class="container">
           <div class="row align-items-center">
             <div class="col col-lg-2">
-              <div class="logo-holder">
+              <a href="/" class="logo-holder">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" width="200px">
-              </div>
+              </a>
             </div>
             <div class="col-sm">
               <div class="search-holder">

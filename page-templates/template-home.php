@@ -15,7 +15,7 @@ get_header();
 ?>
 
 <div class="home-hero">
-    
+    <h1>CREATE RECIPES</h1>
 </div>
 
 <?php
