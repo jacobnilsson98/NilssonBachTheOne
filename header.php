@@ -11,6 +11,9 @@ defined( 'ABSPATH' ) || exit;
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700;800&display=swap" rel="stylesheet">
     <!-- wp_head begin -->
     <?php wp_head(); ?>
     <!-- wp_head end -->
@@ -37,29 +40,37 @@ defined( 'ABSPATH' ) || exit;
         <!-- ******************* The Navbar Area ******************* -->
         <div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
+      <div class="top-header-holder">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col col-lg-2">
+              <div class="logo-holder">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" width="200px">
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="search-holder">
+                <div class="search">Search</div>
+              </div>
+            </div>
+            <div class="col col-lg-2">
+              <div class="upload-holder">
+                <div class="upload">
+                  <a href="#">Upload your recipe</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
           <a class="skip-link visually-hidden-focusable" href="#theme-main"><?php esc_html_e( 'Skip to content', 'picostrap' ); ?></a>
 
           
           <nav class="navbar <?php echo get_theme_mod('picostrap_header_navbar_expand','navbar-expand-lg'); ?> <?php echo get_theme_mod('picostrap_header_navbar_position')." ". get_theme_mod('picostrap_header_navbar_color_scheme','navbar-dark').' '. get_theme_mod('picostrap_header_navbar_color_choice','bg-dark'); ?>" aria-label="Main Navigation" >
             <div class="container">
               <div id="logo-tagline-wrap">
-                  <!-- Your site title as branding in the menu -->
-                  <?php if ( ! has_custom_logo() ) { ?>
-
-                    <?php if ( is_front_page() && is_home() ) : ?>
-
-                      <div class="navbar-brand mb-0 h3"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></div>
-
-                    <?php else : ?>
-
-                      <a class="navbar-brand mb-0 h3" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-
-                    <?php endif; ?>
-
-
-                  <?php } else {
-                    the_custom_logo();
-                  } ?><!-- end custom logo -->
+                  
 
                 
                   <?php if (!get_theme_mod('header_disable_tagline')): ?>

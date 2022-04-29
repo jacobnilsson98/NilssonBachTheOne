@@ -3,3 +3,70 @@
 @import "wp_basic_styles";      
 @import "picostrap";  
 @import "woocommerce";
+
+body{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+//hero img
+.home-hero{
+    height: 1080px;
+    background: #ccc;
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+}
+
+//nav på toppen
+
+
+
+#wrapper-navbar{
+    .top-header-holder{
+        height: 160px;
+        background: #f1f1f1;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .container{
+            
+            .logo-holder{
+                .logo{
+                    width: 275px;
+                    height: auto;
+                }
+            }
+            .upload-holder{
+                .upload{
+                    a{
+                        color: black;
+                        text-decoration: none;
+                        &:hover {
+                            color: grey;
+                        }
+                    }
+                }
+            }
+            .search{
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+    .navbar{
+        
+        ul{
+            flex:1;
+            justify-content: center;
+            padding: 1em;
+            li{
+                a{
+                    font-weight: 400;
+                    font-size: 21px;
+                   
+     
+                    
+                }
+            }
+        }
+    }
+}
