@@ -114,6 +114,9 @@ body{
       } 
   }
 
+
+  //home content
+
  .break{
      .break-latest{
          font-size: 35px;
@@ -133,7 +136,16 @@ body{
           position: relative;
 
 
-
+        .recipe-image{
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 100%;
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            border-radius: 0%;
+        }
+        
           .recipe-image1 {
               background-image:url(./img/ramen.png);
               background-size: cover;
@@ -178,6 +190,8 @@ body{
             
         }
         .title p{
+          
+
             font-size: 15px;
             color: black;
             font-weight: bold;
@@ -195,6 +209,127 @@ body{
       }
 
   }
+
+
+
+
+
+
+
+//Dishes content
+
+
+
+// .home-dishes{
+     
+//     .dish-action{
+//         border-radius: 1%;
+//         background: #ccc;
+//         padding-bottom: 100%;
+//         position: relative;
+
+
+//       .dish-image{
+//           background-size: cover;
+//           background-repeat: no-repeat;
+//           padding-bottom: 100%;
+          
+//           left: 10px;
+//           right: 10px;
+//           border-radius: 0%;
+//       }
+      
+       
+//         .dish-title{
+//           font-size: 30px;
+//           position: absolute;
+//           left: 20px;
+//           right: 20px;
+//           bottom: -30%;
+//           background: #f2f2f2;
+//           padding: 0.5em 0.5em;
+          
+//       }
+//       .dish-title p{
+//           font-size: 15px;
+//           color: black;
+//           font-weight: bold;
+//       }
+//       .dish-title a{
+//           font-size: 20px;
+//           color: black;
+//           text-decoration: none;
+//           border-bottom: 1px solid black;
+//           &:hover {
+//           color: grey;
+          
+//           }
+//       }
+//     }
+
+// }
+
+.dishes-img {
+   margin-bottom: -60px;
+   
+}
+
+.container-dishes{
+    width: 70%;
+    background-color: red;
+    float: right;
+    height: 100%;
+}
+.single-dishes-archive{
+    float: right;
+    width: 50%;
+    padding: 30px;
+    font-size: 10px;
+    background-color: green;
+}
+
+
+
+.single-dishes-archive h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dishes-title{
+        position: relative;
+        background: #f2f2f2;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    
+}
+
+.dishes-title p{
+    display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 30ch;
+
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+.dishes-title a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    &:hover {
+    color: grey;
+    }
+}
+
+
+
+
+  
 
   
 
