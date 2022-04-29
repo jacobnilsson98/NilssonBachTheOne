@@ -1,45 +1,57 @@
 <?php
 
-// Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
-
 get_header();
+
+if ( have_posts() ) :
+	?>
+    <h2><?php
+		if ( is_category() ) {
+			single_cat_title( 'Category Archive: ' );
+		} elseif ( is_tag() ) {
+			single_tag_title( 'Tag Archive: ' );
+		} elseif ( is_author() ) {
+			the_post();
+			echo 'Author Archives: ' . get_the_author();
+			rewind_posts();
+		} elseif ( is_day() ) {
+			echo 'Daily Archives: ' . get_the_date();
+		} elseif ( is_month() ) {
+			echo 'Monthly Archives: ' . get_the_date( 'F Y' );
+		} elseif ( is_year() ) {
+			echo 'Yearly Archives: ' . get_the_date( 'Y' );
+		} else {
+			echo 'Archives: ';
+		}
+		?></h2>
+	<?php
+	while ( have_posts() ) : the_post(); ?>
+
+        <article class="post">
+            <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+            <p class="post-meta"><?php the_time( 'F jS, Y' ); ?> | <a
+                        href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a>
+                | <?php
+				$categories = get_the_category();
+				$comma      = ', ';
+				$output     = '';
+				
+				if ( $categories ) {
+					foreach ( $categories as $category ) {
+						$output .= '<a href="' . get_category_link( $category->term_id ) . '">' . $category->cat_name . '</a>' . $comma;
+					}
+					echo trim( $output, $comma );
+				} ?>
+            </p>
+			<?php the_excerpt() ?>
+        </article>
+	
+	<?php endwhile;
+
+else :
+	echo '<p>There are no posts!</p>';
+
+endif;
+
+get_footer();
+
 ?>
-  
- 
-
-<section class="py-6 bg-light text-center">
-  <div class="container">
-    <h1><?php the_archive_title() ?></h1>
-    <div class="lead text-muted col-md-8 offset-md-2 archive-description"><?php echo category_description(); ?></div> 
- 
-    <!-- <p>
-      <a href="#" class="btn btn-primary my-2">Action</a>
-      <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-    </p> -->
-  </div>
-</section>
-
-<section class="album py-5">
-  <div class="container">
-    <div class="row">
-    <?php 
-        if ( have_posts() ) : 
-            while ( have_posts() ) : the_post();
-              get_template_part('loops/cards');
-            endwhile;
-        else :
-            _e( 'Sorry, no posts matched your criteria.', 'textdomain' );
-        endif;
-        ?>
-    </div>
-
-    <div class="row">
-      <div class="col lead text-center w-100">
-        <div class="d-inline-block"><?php picostrap_pagination() ?></div>
-      </div><!-- /col -->
-    </div> <!-- /row -->
-  </div>
-</section>
- 
-<?php get_footer();

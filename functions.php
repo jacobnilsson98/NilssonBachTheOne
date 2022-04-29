@@ -44,3 +44,48 @@ if (get_theme_mod("enable_lightbox") ) require_once locate_template('/inc/lightb
 //OPTIONAL: DETECT PAGE SCROLL
 if (get_theme_mod("enable_detect_page_scroll") ) require_once locate_template('/inc/detect-page-scroll.php');
 
+
+
+function my_cptui_add_post_types_to_archives( $query ) {
+	// We do not want unintended consequences.
+	if ( is_admin() || ! $query->is_main_query() ) {
+		return;    
+	}
+
+	if ( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+		$cptui_post_types = cptui_get_post_type_slugs();
+
+		$query->set(
+			'post_type',
+			array_merge(
+				array( 'post' ),
+				$cptui_post_types
+			)
+		);
+	}
+}
+add_filter( 'pre_get_posts', 'my_cptui_add_post_types_to_archives' );
+
+
+function crunchify_add_cpt_to_archive_page( $query ) {
+	if( (is_category() || is_tag()) && $query->is_archive() && empty( $query->query_vars['suppress_filters'] ) ) {
+	  $query->set( 'post_type', array(
+	   'post', 'guides'
+		  ));
+	  }
+	  return $query;
+  }
+  add_filter( 'pre_get_posts', 'crunchify_add_cpt_to_archive_page' );
+
+
+  function add_custom_types_to_tax( $query ) {
+	if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+	 
+	// Get all your post types
+	$post_types = get_post_types();
+	 
+	$query->set( 'post_type', $post_types );
+	return $query;
+	}
+	}
+	add_filter( 'pre_get_posts', 'add_custom_types_to_tax' );

@@ -56,7 +56,7 @@ defined( 'ABSPATH' ) || exit;
             <div class="col col-lg-2">
               <div class="upload-holder">
                 <div class="upload">
-                  <a href="#">Upload your recipe</a>
+                  <a href="/dishes">Upload your recipe</a>
                 </div>
               </div>
             </div>

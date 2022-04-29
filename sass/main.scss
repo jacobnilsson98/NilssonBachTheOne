@@ -269,68 +269,85 @@ body{
 
 // }
 
-.dishes-img {
-   margin-bottom: -60px;
+//  .dishes-img {
+//    margin-bottom: -60px;
    
-}
+//  }
 
-.container-dishes{
-    width: 70%;
-    background-color: red;
-    float: right;
-    height: 100%;
-}
-.single-dishes-archive{
-    float: right;
-    width: 50%;
-    padding: 30px;
-    font-size: 10px;
-    background-color: green;
-}
+//  .container-dishes{
+//      width: 70%;
+//      background-color: red;
+//      float: right;
+//      height: 100%;
+// }
+//  .single-dishes-archive{
+//      float: right;
+//      width: 50%;
+//     padding: 30px;
+//      font-size: 10px;
+//     background-color: green;
+//  }
 
 
 
-.single-dishes-archive h1{
-    font-size: 30px;
-    font-weight: bold;
-}
+//  .single-dishes-archive h1{
+//      font-size: 30px;
+//      font-weight: bold;
+//  }
 
-.dishes-title{
-        position: relative;
-        background: #f2f2f2;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 15px;
+//  .dishes-title{
+//          position: relative;
+//          background: #f2f2f2;
+//         width: 90%;
+//          margin-left: auto;
+//        margin-right: auto;
+//        padding: 15px;
     
-}
+//  }
 
-.dishes-title p{
-    display:inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 30ch;
+//  .dishes-title p{
+//     display:inline-block;
+//    white-space: nowrap;
+//    overflow: hidden;
+//    text-overflow: ellipsis;
+//    max-width: 30ch;
 
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-}
-.dishes-title a{
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    border-bottom: 1px solid black;
-    &:hover {
-    color: grey;
-    }
-}
+//      font-size: 15px;
+//      color: black;
+//      font-weight: bold;
+//  }
+//  .dishes-title a{
+//      font-size: 20px;
+//     color: black;
+//     text-decoration: none;
+//      border-bottom: 1px solid black;
+//     &:hover {
+//     color: grey;
+//     }
+//  }
+
+// .wrapper-dishes{
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .container-dishes{
+//     display:grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 10px;
+    
+// }
 
 
+  .container-dishes{
+    
+  }
 
-
-  
-
+  .content-dishes{
+      width: 33%;
+      float: left;
+      height: 80%;
+  }
   
 
  

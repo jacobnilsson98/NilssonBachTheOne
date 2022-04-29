@@ -11,34 +11,35 @@
 
 // Exit if accessed directly.
 get_header(); ?>
+
+
+<div class="break">
+    <div class="break-latest">
+        
+    </div>
+</div>
+
 <div class="container-dishes">           
     <?php
         if(have_posts()) : 
         while(have_posts()) : the_post();?>
-            <div class="single-dishes-archive">
-
-            
-            <div class="dishes-img">
-            <?php 
+       <div class="content-dishes">
+       <?php 
             $image = get_field('featured_image');
             if( !empty( $image ) ): ?>
-            <img width="370" height="493" img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <img style="height:500px; width:400px;" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
             <?php endif; ?>
-            </div>
             
-            
-
-            <div class="dishes-title">
-            <h1><?php the_title(); ?></h1>
+            <h4><?php the_title(); ?></h4>
             <?php the_content(); ?>
             </div>
-</div>
+    </div>
 
 <?php endwhile; endif;
 ?>
 
 
-
+</div>
 <?
 get_footer();
 
