@@ -68,4 +68,116 @@ add_action('init', 'picostrap5_custom_post_taxonomy');
 
 
 
+function cptui_register_my_cpts() {
+
+	/**
+	 * Post Type: dishes.
+	 */
+
+	$labels = [
+		"name" => __( "dishes", "picostrap5" ),
+		"singular_name" => __( "dish", "picostrap5" ),
+	];
+
+	$args = [
+		"label" => __( "dishes", "picostrap5" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"can_export" => false,
+		"rewrite" => [ "slug" => "bs_recipie", "with_front" => true ],
+		"query_var" => true,
+		"menu_position" => 6,
+		"supports" => [ "title", "editor", "thumbnail", "custom-fields", "revisions", "author", "post-formats" ],
+		"taxonomies" => [ "category", "bs_recipie_category" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "bs_recipie", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts' );
+
+
+
+
+function cptui_register_my_taxes() {
+
+	/**
+	 * Taxonomy: type.
+	 */
+
+	$labels = [
+		"name" => __( "type", "picostrap5" ),
+		"singular_name" => __( "types", "picostrap5" ),
+	];
+
 	
+	$args = [
+		"label" => __( "type", "picostrap5" ),
+		"labels" => $labels,
+		"public" => true,
+		"publicly_queryable" => true,
+		"hierarchical" => true,
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => [ 'slug' => 'bs_recipie_category', 'with_front' => true,  'hierarchical' => true, ],
+		"show_admin_column" => false,
+		"show_in_rest" => true,
+		"show_tagcloud" => false,
+		"rest_base" => "bs_recipie_category",
+		"rest_controller_class" => "WP_REST_Terms_Controller",
+		"show_in_quick_edit" => false,
+		"sort" => false,
+		"show_in_graphql" => false,
+	];
+	register_taxonomy( "bs_recipie_category", [ "post", "dishes" ], $args );
+
+	/**
+	 * Taxonomy: tags.
+	 */
+
+	$labels = [
+		"name" => __( "tags", "picostrap5" ),
+		"singular_name" => __( "tag", "picostrap5" ),
+	];
+
+	
+	$args = [
+		"label" => __( "tags", "picostrap5" ),
+		"labels" => $labels,
+		"public" => true,
+		"publicly_queryable" => true,
+		"hierarchical" => false,
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => [ 'slug' => 'bs_recipie_tag', 'with_front' => true, ],
+		"show_admin_column" => false,
+		"show_in_rest" => true,
+		"show_tagcloud" => false,
+		"rest_base" => "bs_recipie_tag",
+		"rest_controller_class" => "WP_REST_Terms_Controller",
+		"show_in_quick_edit" => false,
+		"sort" => false,
+		"show_in_graphql" => false,
+	];
+	register_taxonomy( "bs_recipie_tag", [ "bs_recipie" ], $args );
+}
+add_action( 'init', 'cptui_register_my_taxes' );
