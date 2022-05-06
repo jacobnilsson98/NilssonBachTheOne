@@ -127,7 +127,13 @@ body{
  }
   
   .home-recipes{
-     
+    position: relative;
+    z-index: 1;
+
+        .col-lg-4{
+            padding: 50px;
+            padding-bottom: 130px;
+        }
       .recipe-action{
           border-radius: 1%;
           background: #ccc;
@@ -187,6 +193,7 @@ body{
             bottom: -30%;
             background: #f2f2f2;
             padding: 0.5em 0.5em;
+            
             
         }
         .title p{

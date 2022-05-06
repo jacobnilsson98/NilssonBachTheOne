@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NilssonBachTheOne\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-06 17:42+0000\n"
+"PO-Revision-Date: 2022-05-06 17:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: Polish\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.1; wp-5.9.3\n"
+"X-Domain: picostrap5"
+
+#. Name of the template
+msgid "Blank NoFooter Page Template"
+msgstr "Pusty szablon strony NoFooter"
+
+#. Name of the template
+msgid "Blank Page Template"
+msgstr "Szablon pustej strony"
+
+#. Name of the template
+msgid "Bootstrap Demo Template"
+msgstr "Demo szablon Bootstrap"
+
+#. Name of the template
+msgid "Default Without Jumbotron"
+msgstr "Domyślnie Bez Jumbotron"
+
+#: functions.php:79
+msgid "dish"
+msgstr "danie"
+
+#: functions.php:78 functions.php:83
+msgid "dishes"
+msgstr "dania"
+
+#. Name of the template
+msgid "Empty Page Template"
+msgstr "Pusty szablon strony"
+
+#. URI of the theme
+msgid "https://picostrap.com"
+msgstr ""
+
+#. Name of the theme
+msgid "NilssonBachTheOne"
+msgstr "Нильссонбахтеоне"
+
+#. Name of the template
+msgid "Page with Sidebar on the Left"
+msgstr "Strona z panelem bocznym po lewej stronie"
+
+#. Name of the template
+msgid "Page with Sidebar on the Right"
+msgstr "Strona z panelem bocznym po prawej stronie"
+
+#. Name of the template
+msgid "recipie archive"
+msgstr "archiwum receptur"
+
+#: functions.php:157
+msgid "tag"
+msgstr "tag"
+
+#: functions.php:156 functions.php:162
+msgid "tags"
+msgstr "Tagi"
+
+#. Name of the template
+msgid "Template: Food"
+msgstr "Szablon: Jedzenie"
+
+#. Name of the template
+msgid "Template: Home"
+msgstr "Szablon: Strona Główna"
+
+#. Description of the theme
+msgid "The fastest Bootstrap 5 WordPress starter theme"
+msgstr "Najszybszym Bootstrap 5 WordPress starter theme"
+
+#. Author of the theme
+msgid "The picostrap Team"
+msgstr "Zespół picostrap"
+
+#: functions.php:124 functions.php:130
+msgid "type"
+msgstr "Typ"
+
+#: functions.php:125
+msgid "types"
+msgstr "rodzaje"

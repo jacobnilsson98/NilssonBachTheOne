@@ -37,7 +37,7 @@ get_header();
                 <div class="title">
                     <h3>SHOYU RAMEN</h3>
                     <p>Den här drinken är utan tvekan den perfekta pricken över i:et av esmorzaret, samtidigt som den är en...</p>
-                    <a href="<?php the_permalink();?>">READ MORE</a>
+                    <a href="/bs_recipie">READ MORE</a>
                 </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ get_header();
                 <div class="title">
                     <h3>HONEYDEW TEA</h3>
                     <p>Den här drinken är utan tvekan den perfekta pricken över i:et av esmorzaret, samtidigt som den är en...</p>
-                    <a href="#">READ MORE</a>
+                    <a href="/bs_recipie">READ MORE</a>
                 </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@ get_header();
                 <div class="title">
                     <h3>CREMAET</h3>
                     <p>Den här drinken är utan tvekan den perfekta pricken över i:et av esmorzaret, samtidigt som den är en...</p>
-                    <a href="#">READ MORE</a>
+                    <a href="/bs_recipie">READ MORE</a>
                 </div>
                 </div>
             </div>
