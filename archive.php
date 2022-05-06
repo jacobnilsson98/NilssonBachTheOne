@@ -44,6 +44,8 @@ if ( have_posts() ) :
             </p>
 			<?php the_excerpt() ?>
         </article>
+
+		
 	
 	<?php endwhile;
 
@@ -51,6 +53,8 @@ else :
 	echo '<p>There are no posts!</p>';
 
 endif;
+
+
 
 get_footer();
 
