@@ -99,3 +99,42 @@ msgstr ""
 
 msgid "Recipe"
 msgstr ""
+
+msgid "Dish"
+msgstr ""
+
+msgid "Instructions"
+msgstr ""
+
+msgid "Ingredients"
+msgstr ""
+
+msgid "latest recipes"
+msgstr ""
+
+msgid "Create Recipes"
+msgstr ""
+
+msgid "Explore, discover and be inspired"
+msgstr ""
+
+msgid "Looking for ways to use all the fresh produce springing up? Weve got over...."
+msgstr ""
+
+msgid "READ MORE"
+msgstr ""
+
+msgid "Parmesan cheese adds a salty, savory component to sweet, tender asparagus...."
+msgstr ""
+
+msgid "Looking for ways to use all the fresh produce springing up? Weve got over...."
+msgstr ""
+
+msgid "Get your chips ready for the best guacamole recipes including the classic...."
+msgstr ""
+
+msgid "Servings"
+msgstr ""
+
+msgid "Category"
+msgstr ""

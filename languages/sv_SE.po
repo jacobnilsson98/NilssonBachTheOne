@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: NilssonBachTheOne\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-06 17:42+0000\n"
-"PO-Revision-Date: 2022-05-10 14:34+0000\n"
+"PO-Revision-Date: 2022-05-10 21:09+0000\n"
 "Last-Translator: \n"
-"Language-Team: Swedish\n"
+"Language-Team: Svenska\n"
 "Language: sv_SE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
@@ -27,9 +27,18 @@ msgstr "Tom Mall"
 msgid "Bootstrap Demo Template"
 msgstr "Bootstrap-Demo Mall"
 
+msgid "Category"
+msgstr "Kategori"
+
+msgid "Create Recipes"
+msgstr "Skapa recept"
+
 #. Name of the template
 msgid "Default Without Jumbotron"
 msgstr "Standard Utan Jumbotron"
+
+msgid "Dish"
+msgstr "Maträtt"
 
 #: functions.php:79
 msgid "dish"
@@ -43,9 +52,33 @@ msgstr "rätter"
 msgid "Empty Page Template"
 msgstr "Tom Mall"
 
+msgid "Explore, discover and be inspired"
+msgstr "Utforska, upptäck och låt dig inspireras"
+
+msgid ""
+"Get your chips ready for the best guacamole recipes including the classic...."
+msgstr ""
+"Gör dina chips redo för de bästa guacamole-recepten inklusive det klassiska.."
+".."
+
 #. URI of the theme
 msgid "https://picostrap.com"
+msgstr "https://picostrap.com"
+
+msgid "Ingredients"
+msgstr "Ingredienser"
+
+msgid "Instructions"
+msgstr "Instruktioner"
+
+msgid "latest recipes"
+msgstr "senaste recepten"
+
+msgid ""
+"Looking for ways to use all the fresh produce springing up? Weve got over...."
 msgstr ""
+"Letar du efter sätt att använda alla färskvaror som dyker upp? Vi har kommit "
+"över...."
 
 #. Name of the theme
 msgid "NilssonBachTheOne"
@@ -59,12 +92,24 @@ msgstr "Sidan med Sidofältet till Vänster"
 msgid "Page with Sidebar on the Right"
 msgstr "Sidan med Sidofältet till Höger"
 
-msgid "Recipe"
+msgid ""
+"Parmesan cheese adds a salty, savory component to sweet, tender asparagus...."
 msgstr ""
+"Parmesanost lägger till en salt, välsmakande komponent till söt, mör sparris."
+"..."
+
+msgid "READ MORE"
+msgstr "LÄS MER"
+
+msgid "Recipe"
+msgstr "Recept"
 
 #. Name of the template
 msgid "recipie archive"
 msgstr "recipie arkiv"
+
+msgid "Servings"
+msgstr "Serveringar"
 
 #: functions.php:157
 msgid "tag"

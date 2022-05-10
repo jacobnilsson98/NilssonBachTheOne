@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: NilssonBachTheOne\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-06 17:42+0000\n"
-"PO-Revision-Date: 2022-05-06 18:04+0000\n"
+"PO-Revision-Date: 2022-05-10 21:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: Finnish\n"
 "Language: fi\n"
@@ -27,9 +27,18 @@ msgstr "Tyhjä Sivu Mallin"
 msgid "Bootstrap Demo Template"
 msgstr "Bootstrap Template Demo"
 
+msgid "Category"
+msgstr ""
+
+msgid "Create Recipes"
+msgstr ""
+
 #. Name of the template
 msgid "Default Without Jumbotron"
 msgstr "Oletuksena Ilman Jumbotron"
+
+msgid "Dish"
+msgstr ""
 
 #: functions.php:79
 msgid "dish"
@@ -43,8 +52,28 @@ msgstr "ruokia"
 msgid "Empty Page Template"
 msgstr "Tyhjä Sivu Mallin"
 
+msgid "Explore, discover and be inspired"
+msgstr ""
+
+msgid ""
+"Get your chips ready for the best guacamole recipes including the classic...."
+msgstr ""
+
 #. URI of the theme
 msgid "https://picostrap.com"
+msgstr ""
+
+msgid "Ingredients"
+msgstr ""
+
+msgid "Instructions"
+msgstr ""
+
+msgid "latest recipes"
+msgstr ""
+
+msgid ""
+"Looking for ways to use all the fresh produce springing up? Weve got over...."
 msgstr ""
 
 #. Name of the theme
@@ -59,9 +88,22 @@ msgstr "Sivu Sivupalkissa Vasemmalla"
 msgid "Page with Sidebar on the Right"
 msgstr "Sivu Sivupalkki Oikealla"
 
+msgid ""
+"Parmesan cheese adds a salty, savory component to sweet, tender asparagus...."
+msgstr ""
+
+msgid "READ MORE"
+msgstr ""
+
+msgid "Recipe"
+msgstr ""
+
 #. Name of the template
 msgid "recipie archive"
 msgstr "recipie arkisto"
+
+msgid "Servings"
+msgstr ""
 
 #: functions.php:157
 msgid "tag"

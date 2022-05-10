@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: NilssonBachTheOne\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-06 17:42+0000\n"
-"PO-Revision-Date: 2022-05-10 21:01+0000\n"
+"PO-Revision-Date: 2022-05-10 21:08+0000\n"
 "Last-Translator: \n"
-"Language-Team: Turkish\n"
-"Language: tr_TR\n"
+"Language-Team: Svenska\n"
+"Language: sv_SE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,15 +17,15 @@ msgstr ""
 
 #. Name of the template
 msgid "Blank NoFooter Page Template"
-msgstr "Boş NoFooter Sayfa Şablonu"
+msgstr "Tom NoFooter Sidmall"
 
 #. Name of the template
 msgid "Blank Page Template"
-msgstr "Boş Sayfa Şablonu"
+msgstr "Tom Mall"
 
 #. Name of the template
 msgid "Bootstrap Demo Template"
-msgstr "Bootstrap Demo Şablonu"
+msgstr "Bootstrap-Demo Mall"
 
 msgid "Category"
 msgstr ""
@@ -35,22 +35,22 @@ msgstr ""
 
 #. Name of the template
 msgid "Default Without Jumbotron"
-msgstr "Jumbotron Olmadan Varsayılan"
+msgstr "Standard Utan Jumbotron"
 
 msgid "Dish"
-msgstr ""
+msgstr "Maträtt"
 
 #: functions.php:79
 msgid "dish"
-msgstr "tabak"
+msgstr "maträtt"
 
 #: functions.php:78 functions.php:83
 msgid "dishes"
-msgstr "bulaşıklar"
+msgstr "rätter"
 
 #. Name of the template
 msgid "Empty Page Template"
-msgstr "Boş Sayfa Şablonu"
+msgstr "Tom Mall"
 
 msgid "Explore, discover and be inspired"
 msgstr ""
@@ -82,11 +82,11 @@ msgstr "NilssonBachTheOne"
 
 #. Name of the template
 msgid "Page with Sidebar on the Left"
-msgstr "Solda Kenar Çubuğu olan Sayfa"
+msgstr "Sidan med Sidofältet till Vänster"
 
 #. Name of the template
 msgid "Page with Sidebar on the Right"
-msgstr "Sağda Kenar Çubuğu olan Sayfa"
+msgstr "Sidan med Sidofältet till Höger"
 
 msgid ""
 "Parmesan cheese adds a salty, savory component to sweet, tender asparagus...."
@@ -96,43 +96,43 @@ msgid "READ MORE"
 msgstr ""
 
 msgid "Recipe"
-msgstr ""
+msgstr "Recept"
 
 #. Name of the template
 msgid "recipie archive"
-msgstr "tarif arşivi"
+msgstr "recipie arkiv"
 
 msgid "Servings"
-msgstr ""
+msgstr "Serveringar"
 
 #: functions.php:157
 msgid "tag"
-msgstr "etiket"
+msgstr "tag"
 
 #: functions.php:156 functions.php:162
 msgid "tags"
-msgstr "etiketler"
+msgstr "taggar"
 
 #. Name of the template
 msgid "Template: Food"
-msgstr "Şablon: Gıda"
+msgstr "Mall: Mat"
 
 #. Name of the template
 msgid "Template: Home"
-msgstr "Şablon: Ana sayfa"
+msgstr "Mall: Hem"
 
 #. Description of the theme
 msgid "The fastest Bootstrap 5 WordPress starter theme"
-msgstr "En hızlı Bootstrap 5 WordPress başlangıç teması"
+msgstr "Den snabbaste Bootstrap 5 WordPress starter theme"
 
 #. Author of the theme
 msgid "The picostrap Team"
-msgstr "Picostrap Takımı"
+msgstr "Den picostrap Team"
 
 #: functions.php:124 functions.php:130
 msgid "type"
-msgstr "tip"
+msgstr "typ"
 
 #: functions.php:125
 msgid "types"
-msgstr "türler"
+msgstr "typer"

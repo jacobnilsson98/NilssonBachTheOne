@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: NilssonBachTheOne\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-06 17:42+0000\n"
-"PO-Revision-Date: 2022-05-10 21:01+0000\n"
+"PO-Revision-Date: 2022-05-10 20:45+0000\n"
 "Last-Translator: \n"
-"Language-Team: Turkish\n"
-"Language: tr_TR\n"
+"Language-Team: Finnish\n"
+"Language: fi\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,47 +17,34 @@ msgstr ""
 
 #. Name of the template
 msgid "Blank NoFooter Page Template"
-msgstr "Boş NoFooter Sayfa Şablonu"
+msgstr "Tyhjä NoFooter Sivun Malli"
 
 #. Name of the template
 msgid "Blank Page Template"
-msgstr "Boş Sayfa Şablonu"
+msgstr "Tyhjä Sivu Mallin"
 
 #. Name of the template
 msgid "Bootstrap Demo Template"
-msgstr "Bootstrap Demo Şablonu"
-
-msgid "Category"
-msgstr ""
-
-msgid "Create Recipes"
-msgstr ""
+msgstr "Bootstrap Template Demo"
 
 #. Name of the template
 msgid "Default Without Jumbotron"
-msgstr "Jumbotron Olmadan Varsayılan"
+msgstr "Oletuksena Ilman Jumbotron"
 
 msgid "Dish"
 msgstr ""
 
 #: functions.php:79
 msgid "dish"
-msgstr "tabak"
+msgstr "ruokalaji"
 
 #: functions.php:78 functions.php:83
 msgid "dishes"
-msgstr "bulaşıklar"
+msgstr "ruokia"
 
 #. Name of the template
 msgid "Empty Page Template"
-msgstr "Boş Sayfa Şablonu"
-
-msgid "Explore, discover and be inspired"
-msgstr ""
-
-msgid ""
-"Get your chips ready for the best guacamole recipes including the classic...."
-msgstr ""
+msgstr "Tyhjä Sivu Mallin"
 
 #. URI of the theme
 msgid "https://picostrap.com"
@@ -69,70 +56,53 @@ msgstr ""
 msgid "Instructions"
 msgstr ""
 
-msgid "latest recipes"
-msgstr ""
-
-msgid ""
-"Looking for ways to use all the fresh produce springing up? Weve got over...."
-msgstr ""
-
 #. Name of the theme
 msgid "NilssonBachTheOne"
 msgstr "NilssonBachTheOne"
 
 #. Name of the template
 msgid "Page with Sidebar on the Left"
-msgstr "Solda Kenar Çubuğu olan Sayfa"
+msgstr "Sivu Sivupalkissa Vasemmalla"
 
 #. Name of the template
 msgid "Page with Sidebar on the Right"
-msgstr "Sağda Kenar Çubuğu olan Sayfa"
-
-msgid ""
-"Parmesan cheese adds a salty, savory component to sweet, tender asparagus...."
-msgstr ""
-
-msgid "READ MORE"
-msgstr ""
+msgstr "Sivu Sivupalkki Oikealla"
 
 msgid "Recipe"
 msgstr ""
 
 #. Name of the template
 msgid "recipie archive"
-msgstr "tarif arşivi"
-
-msgid "Servings"
-msgstr ""
+msgstr "recipie arkisto"
 
 #: functions.php:157
 msgid "tag"
-msgstr "etiket"
+msgstr "tag"
 
 #: functions.php:156 functions.php:162
 msgid "tags"
-msgstr "etiketler"
+msgstr "tunnisteet"
 
 #. Name of the template
 msgid "Template: Food"
-msgstr "Şablon: Gıda"
+msgstr "Template: Food"
 
 #. Name of the template
 msgid "Template: Home"
-msgstr "Şablon: Ana sayfa"
+msgstr "Malline: Etusivu"
 
 #. Description of the theme
 msgid "The fastest Bootstrap 5 WordPress starter theme"
-msgstr "En hızlı Bootstrap 5 WordPress başlangıç teması"
+msgstr "Nopein Bootstrap 5 käynnistin teema, WordPress"
 
 #. Author of the theme
 msgid "The picostrap Team"
-msgstr "Picostrap Takımı"
+msgstr "Se picostrap Joukkue"
 
 #: functions.php:124 functions.php:130
 msgid "type"
-msgstr "tip"
+msgstr "tyyppi"
 
 #: functions.php:125
 msgid "types"
-msgstr "türler"
+msgstr "tyypit"

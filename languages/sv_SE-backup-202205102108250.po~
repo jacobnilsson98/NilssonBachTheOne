@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: NilssonBachTheOne\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-06 17:42+0000\n"
-"PO-Revision-Date: 2022-05-06 17:56+0000\n"
+"PO-Revision-Date: 2022-05-10 21:08+0000\n"
 "Last-Translator: \n"
-"Language-Team: Swedish\n"
+"Language-Team: Svenska\n"
 "Language: sv_SE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
@@ -27,9 +27,18 @@ msgstr "Tom Mall"
 msgid "Bootstrap Demo Template"
 msgstr "Bootstrap-Demo Mall"
 
+msgid "Category"
+msgstr ""
+
+msgid "Create Recipes"
+msgstr ""
+
 #. Name of the template
 msgid "Default Without Jumbotron"
 msgstr "Standard Utan Jumbotron"
+
+msgid "Dish"
+msgstr "Maträtt"
 
 #: functions.php:79
 msgid "dish"
@@ -43,8 +52,28 @@ msgstr "rätter"
 msgid "Empty Page Template"
 msgstr "Tom Mall"
 
+msgid "Explore, discover and be inspired"
+msgstr ""
+
+msgid ""
+"Get your chips ready for the best guacamole recipes including the classic...."
+msgstr ""
+
 #. URI of the theme
 msgid "https://picostrap.com"
+msgstr ""
+
+msgid "Ingredients"
+msgstr ""
+
+msgid "Instructions"
+msgstr ""
+
+msgid "latest recipes"
+msgstr ""
+
+msgid ""
+"Looking for ways to use all the fresh produce springing up? Weve got over...."
 msgstr ""
 
 #. Name of the theme
@@ -59,9 +88,22 @@ msgstr "Sidan med Sidofältet till Vänster"
 msgid "Page with Sidebar on the Right"
 msgstr "Sidan med Sidofältet till Höger"
 
+msgid ""
+"Parmesan cheese adds a salty, savory component to sweet, tender asparagus...."
+msgstr ""
+
+msgid "READ MORE"
+msgstr ""
+
+msgid "Recipe"
+msgstr ""
+
 #. Name of the template
 msgid "recipie archive"
 msgstr "recipie arkiv"
+
+msgid "Servings"
+msgstr "Serveringar"
 
 #: functions.php:157
 msgid "tag"

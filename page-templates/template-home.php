@@ -16,15 +16,15 @@ get_header();
 
 <div class="home-hero">
 <div class="hero-text">
-    <h1>CREATE RECIPES</h1>
-    <p>Explore, discover and be inspired</p>
+<h1><?php _e( 'Create Recipes', 'picostrap5' ); ?></h1>
+<p><?php _e( 'Explore, discover and be inspired', 'picostrap5' ); ?></p>
   </div>
     
 </div>
 
 <div class="break">
     <div class="break-latest">
-        latest recipes
+    <p><?php _e( 'latest recipes', 'picostrap5' ); ?></p>
     </div>
 </div>
 
@@ -35,9 +35,10 @@ get_header();
                 <div class="recipe-action">
                 <div class="recipe-image1"></div>
                 <div class="title">
-                    <h3>SHOYU RAMEN</h3>
-                    <p>Den här drinken är utan tvekan den perfekta pricken över i:et av esmorzaret, samtidigt som den är en...</p>
-                    <a href="/bs_recipie">READ MORE</a>
+                <h3><?php _e( 'SHOYU RAMEN', 'picostrap5' ); ?></h3>
+                    
+                    <p><?php _e( 'Looking for ways to use all the fresh produce springing up? Weve got over....', 'picostrap5' ); ?></p>
+                    <a href="/bs_recipie"><p><?php _e( 'READ MORE', 'picostrap5' ); ?></p></a>
                 </div>
                 </div>
             </div>
@@ -46,9 +47,9 @@ get_header();
                 <div class="recipe-action">
                 <div class="recipe-image2"></div>
                 <div class="title">
-                    <h3>HONEYDEW TEA</h3>
-                    <p>Den här drinken är utan tvekan den perfekta pricken över i:et av esmorzaret, samtidigt som den är en...</p>
-                    <a href="/bs_recipie">READ MORE</a>
+                <h3><?php _e( 'HONEYDEW TEA', 'picostrap5' ); ?></h3>
+                <p><?php _e( 'Parmesan cheese adds a salty, savory component to sweet, tender asparagus....', 'picostrap5' ); ?></p>
+                <a href="/bs_recipie"><p><?php _e( 'READ MORE', 'picostrap5' ); ?></p></a>
                 </div>
                 </div>
             </div>
@@ -56,9 +57,9 @@ get_header();
                 <div class="recipe-action">
                 <div class="recipe-image3"></div>
                 <div class="title">
-                    <h3>CREMAET</h3>
-                    <p>Den här drinken är utan tvekan den perfekta pricken över i:et av esmorzaret, samtidigt som den är en...</p>
-                    <a href="/bs_recipie">READ MORE</a>
+                <h3><?php _e( 'CREMEAT', 'picostrap5' ); ?></h3>
+                <p><?php _e( 'Get your chips ready for the best guacamole recipes including the classic....', 'picostrap5' ); ?></p>
+                <a href="/bs_recipie"><p><?php _e( 'READ MORE', 'picostrap5' ); ?></p></a>
                 </div>
                 </div>
             </div>

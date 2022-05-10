@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: NilssonBachTheOne\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-06 17:42+0000\n"
-"PO-Revision-Date: 2022-05-06 17:43+0000\n"
+"PO-Revision-Date: 2022-05-06 18:03+0000\n"
 "Last-Translator: \n"
-"Language-Team: Swedish\n"
-"Language: sv_SE\n"
+"Language-Team: Turkish\n"
+"Language: tr_TR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,31 +17,31 @@ msgstr ""
 
 #. Name of the template
 msgid "Blank NoFooter Page Template"
-msgstr ""
+msgstr "Boş NoFooter Sayfa Şablonu"
 
 #. Name of the template
 msgid "Blank Page Template"
-msgstr ""
+msgstr "Boş Sayfa Şablonu"
 
 #. Name of the template
 msgid "Bootstrap Demo Template"
-msgstr ""
+msgstr "Bootstrap Demo Şablonu"
 
 #. Name of the template
 msgid "Default Without Jumbotron"
-msgstr ""
+msgstr "Jumbotron Olmadan Varsayılan"
 
 #: functions.php:79
 msgid "dish"
-msgstr ""
+msgstr "tabak"
 
 #: functions.php:78 functions.php:83
 msgid "dishes"
-msgstr ""
+msgstr "bulaşıklar"
 
 #. Name of the template
 msgid "Empty Page Template"
-msgstr ""
+msgstr "Boş Sayfa Şablonu"
 
 #. URI of the theme
 msgid "https://picostrap.com"
@@ -49,48 +49,48 @@ msgstr ""
 
 #. Name of the theme
 msgid "NilssonBachTheOne"
-msgstr ""
+msgstr "NilssonBachTheOne"
 
 #. Name of the template
 msgid "Page with Sidebar on the Left"
-msgstr ""
+msgstr "Solda Kenar Çubuğu olan Sayfa"
 
 #. Name of the template
 msgid "Page with Sidebar on the Right"
-msgstr ""
+msgstr "Sağda Kenar Çubuğu olan Sayfa"
 
 #. Name of the template
 msgid "recipie archive"
-msgstr ""
+msgstr "tarif arşivi"
 
 #: functions.php:157
 msgid "tag"
-msgstr ""
+msgstr "etiket"
 
 #: functions.php:156 functions.php:162
 msgid "tags"
-msgstr ""
+msgstr "etiketler"
 
 #. Name of the template
 msgid "Template: Food"
-msgstr ""
+msgstr "Şablon: Gıda"
 
 #. Name of the template
 msgid "Template: Home"
-msgstr ""
+msgstr "Şablon: Ana sayfa"
 
 #. Description of the theme
 msgid "The fastest Bootstrap 5 WordPress starter theme"
-msgstr ""
+msgstr "En hızlı Bootstrap 5 WordPress başlangıç teması"
 
 #. Author of the theme
 msgid "The picostrap Team"
-msgstr ""
+msgstr "Picostrap Takımı"
 
 #: functions.php:124 functions.php:130
 msgid "type"
-msgstr ""
+msgstr "tip"
 
 #: functions.php:125
 msgid "types"
-msgstr ""
+msgstr "türler"
