@@ -248,13 +248,13 @@ img.image{
 }
 .ingredients {
     font-size: 20px;
-    
-    padding: 20px;
+    text-align: center;
+    padding: 100px;
 }
 .amount_ingredients {
     font-size: 20px;
     border-bottom: 1px solid black;
-   
+    display: block;
 }
 .instructions-container{
     padding: 100px;
@@ -269,4 +269,27 @@ img.image{
     font-size: 20px;
     border-bottom: 1px solid black;
     text-align: center;
+}
+
+.recipe_img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+@media(max-width:$lg){
+    .instructions-container{
+        padding: 20px;
+    }
+
+    .ingredients{
+        padding: 20px;
+    }
+
+    .recipe_img{
+        
+        height: 500px;
+        
+    }
 }

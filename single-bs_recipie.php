@@ -11,6 +11,9 @@ $featured_image = get_field('featured_image');
 $servings = get_field('servings');
 $ingredients = get_field('ingredients');
 $instructions = get_field('instructions');
+$instructions = get_field('instructions');
+$cats = get_the_category($id);
+
 
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post();
@@ -49,7 +52,7 @@ if ( have_posts() ) :
         <div class="d-flex justify-content-center">
 		<?php if( $servings ): ?>
             <div class="servings"><h3>Servings</h3>
-		<div class="amount_servings"><pre><?php echo print_r($servings);?></pre></div>
+		<div class="amount_servings"><?php echo print_r($servings);?></div>
         </div>
 		<?php endif; ?>
         </div>
@@ -57,7 +60,7 @@ if ( have_posts() ) :
         <div class="d-flex justify-content-center">
 		<?php if( $ingredients ): ?>
             <div class="ingredients"><h3>Ingredients</h3>
-		<div class="amount_ingredients"></div><pre><?php echo print_r($ingredients);?></pre></div>
+		<div class="amount_ingredients"></div><?php echo print_r($ingredients);?></div>
         </div>
 		<?php endif; ?>
         </div>
@@ -70,6 +73,19 @@ if ( have_posts() ) :
         </div>
 		<?php endif; ?>
         </div>
+
+        <?php foreach ( $cats as $cat ): ?>
+
+        <a href="<?php echo get_category_link($cat->cat_ID); ?>">
+        <?php echo $cat->name; ?>
+        </a>
+
+        <?php endforeach; ?>
+
+        
+
+        
+        
         </div>
             
 
