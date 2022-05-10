@@ -49,9 +49,29 @@ if ( have_posts() ) :
             </div>
         </div>
 
+ <!-- Show the tag/s on the specific recipe-->
+ 
+        <?php 
+        $taxonomy = 'bs_recipie_tag';
+        $terms = get_object_term_cache( $post->ID, $taxonomy );
+        if( ! empty( $terms)){
+            echo "<h3>Recipe Categories</h3>";
+            $output = '';
+
+        foreach($terms as $term) {
+            if(!empty($output))
+            $output .= ' | ';
+            $output .= '<span class="cat"><a href="'. esc_url( get_term_link( $term)). '">'.$term->name.'</a></span>';
+        }
+        echo $output;
+        }
+        ?>
+
+
+
         <div class="d-flex justify-content-center">
 		<?php if( $servings ): ?>
-            <div class="servings"><h3>Servings</h3>
+            <div class="servings"><h3><?php _e( 'Servings', 'picostrap5' ); ?></h3>
 		<div class="amount_servings"><?php echo print_r($servings);?></div>
         </div>
 		<?php endif; ?>
@@ -59,7 +79,7 @@ if ( have_posts() ) :
 
         <div class="d-flex justify-content-center">
 		<?php if( $ingredients ): ?>
-            <div class="ingredients"><h3>Ingredients</h3>
+            <div class="ingredients"><h3><?php _e( 'Ingredients', 'picostrap5' ); ?></h3>
 		<div class="amount_ingredients"></div><?php echo print_r($ingredients);?></div>
         </div>
 		<?php endif; ?>
@@ -68,7 +88,7 @@ if ( have_posts() ) :
         <div class="d-flex justify-content-center">
             <div class="instructions-container"
 		<?php if( $instructions ): ?>
-            <div class="instuctions"><h3>Instructions</h3>
+            <div class="instuctions"><h3><?php _e( 'Instructions', 'picostrap5' ); ?></h3>
 		<div class="amount_instructions"></div><?php echo print_r($instructions);?></div>
         </div>
 		<?php endif; ?>

@@ -95,3 +95,7 @@ msgstr ""
 #: functions.php:125
 msgid "types"
 msgstr ""
+
+
+msgid "Recipe"
+msgstr ""

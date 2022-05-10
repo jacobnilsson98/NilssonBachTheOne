@@ -184,3 +184,11 @@ function cptui_register_my_taxes() {
 add_action( 'init', 'cptui_register_my_taxes' );
 
 
+add_action( 'after_setup_theme', 'my_theme_setup' );
+function my_theme_setup(){
+    load_theme_textdomain( 'picostrap5', get_template_directory() . '/languages' );
+}
+
+
+
+

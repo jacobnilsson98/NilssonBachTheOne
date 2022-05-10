@@ -11,94 +11,85 @@
  */
 
 // Exit if accessed directly.
-defined('ABSPATH') || exit;
-
-get_header();
-
-
-$the_post_id   = get_the_ID();
-$article_terms = wp_get_post_terms( $the_post_id, [ 'category', 'bs_recipie_tag' ] );
 
 
 
-
-
-
-
-
-if ( empty( $article_terms ) || ! is_array( $article_terms ) ) {
-	return;
-}
-?>
+get_header(); ?>
 
 <div class="py-6 bg-light">
     <div class="container text-center">
-        <h1 class="display-4">Recepie</h1>
+        <h1 class="display-4">	
+<h1><?php _e( 'Recipe', 'picostrap5' ); ?></h1></h1>
 
     </div>
 </div>
 
-<div class="d-flex justify-content-center">
-    <div style="padding-inline: 16px; "class="row" >
-       
+  <?php if (have_posts()) : ?>
+   <?php while (have_posts()) : the_post(); ?>
+   <div class="container">
+    <div class="col-md-12 col-lg-12">
+        <article class="post vt-post">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                    <div class="post-type post-img">
+  <!-- img -->
+   <?php the_post_thumbnail(); ?>
+  
+   </div>
+   <!-- Category + date -->
+   <div class="author-info author-info-2">
+                        <ul class="list-inline">
+                            <li>
+
+
+     <small><?php the_time('F jS, Y') ?> <!-- by <?php the_author() ?> --></small>
+     <p class="postmetadata">
+Category: <?php the_category(', ') ?> 
 
 
 
+    <!-- tags -->
+<?php 
+        $taxonomy = 'bs_recipie_tag';
+        $terms = get_object_term_cache( $post->ID, $taxonomy );
+        if( ! empty( $terms)){
+            echo "<p>Tags:</p>", $output = '';
 
-            <?php
-            $args = array(
-                'post_type' => 'bs_recipie',
-                'post_status' => 'publish',
-                'posts_per_page' => 8,
-                'order' => 'ASC',
-            );
+        foreach($terms as $term) {
+            if(!empty($output))
+            $output .= ' | ';
+            $output .= '<span class="cat"><a href="'. esc_url( get_term_link( $term)). '">'.$term->name.'</a></span>';
+        }
+        echo $output;
+        }
+        ?>   
+ </li>
+                        </ul>
+                    </div>
+                </div>
 
-            $loop = new WP_Query($args);
-
-            while ($loop->have_posts()) : $loop->the_post();
-            ?><div class="col-md-4 py-5 order-2"> <?php
-                $image = get_field('featured_image');
-                if (!empty($image)) : ?>
-                    <img class="recipe_img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-
-                    <h4><?php the_title(); ?></h4>
-
-
-
+ <!-- title -->
+ <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                    <div class="caption">
+                <h2 id="post-<?php the_ID(); ?>">
+<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
 
-
-
-
-
-
-    <div class="entry-footer mt-4">
-	<?php
-	foreach ( $article_terms as $key => $article_term ) {
-		?>
-		<a class="entry-footer-link text-black-50 btn border border-secondary mb-2 mr-2" href="<?php echo esc_url( get_term_link( $article_term ) ); ?>">
-				<?php echo esc_html( $article_term->name ); ?>
-		</a>
-		<?php
-	}
-	?>
+<?php the_content('Read the rest of this entry &raquo;'); ?>
 </div>
-<?php
-the_excerpt();?>
+            </div>
+
+
+
+
 </div>
-<?php endif;
-
-               
-endwhile;
-?>
-        </div>
-
-       
-
-    </div>
+      
+    <?php endwhile; ?>
+    
+<?php else : ?>
+  <h2 class="center">Not Found</h2>
+ <p class="center"><?php _e("Sorry, but you are looking for something that isn't here."); ?></p>
+  <?php endif; ?>
 </div>
+<?php get_footer(); ?>
 
-
-
-
-<?php get_footer();

@@ -22,12 +22,15 @@ if ( have_posts() ) :
 		} else {
 			echo 'Archives: ';
 		}
+		
 		?></h2>
 	<?php
-	while ( have_posts() ) : the_post(); ?>
+	while ( have_posts() ) : the_post();
+ ?>
 
         <article class="post">
             <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+			<?php the_post_thumbnail() ?>
             <p class="post-meta"><?php the_time( 'F jS, Y' ); ?> | <a
                         href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a>
                 | <?php
@@ -41,6 +44,8 @@ if ( have_posts() ) :
 					}
 					echo trim( $output, $comma );
 				} ?>
+
+				
             </p>
 			<?php the_excerpt() ?>
         </article>
@@ -59,3 +64,4 @@ endif;
 get_footer();
 
 ?>
+
