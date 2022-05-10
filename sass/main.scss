@@ -227,56 +227,133 @@ body{
 
 
 
+.detail {
+    border: 1px solid #ececec;
+    border-radius: 6px;
+  }
 
-.image-container{
-    width: 500px;
-}
-img.image{
-    max-width: 100%;
-    height: auto;
+
+  .details-desc-item p {
+    overflow: hidden;
+  }
+
+  .section {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    position: relative;
 }
 
-.servings {
-    font-size: 20px;
-    text-align: center;
-    
-}
-.amount_servings {
-    font-size: 20px;
-    border-bottom: 1px solid black;
-    text-align: center;
-}
-.ingredients {
-    font-size: 20px;
-    text-align: center;
-    padding: 100px;
-}
-.amount_ingredients {
-    font-size: 20px;
-    border-bottom: 1px solid black;
+.detail-ingredient{
     display: block;
-}
-.instructions-container{
-    padding: 100px;
-}
-.instructions {
-    font-size: 20px;
-    text-align: center;
-    padding: 20px;
     
 }
-.amount_instructions {
-    font-size: 20px;
-    border-bottom: 1px solid black;
-    text-align: center;
+
+
+
+
+
+
+
+.content {
+    padding: 35px 0px;
 }
 
-.recipe_img{
+.post-list {
+    padding: 90px 0px;
+}
+
+.post-detail {
+    padding: 40px 0px;
+    margin-top: 120px;
+}
+
+.post {
     width: 100%;
+    float: left;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    background: #fff;
+    margin-bottom: 40px;
+    border-radius: 3px;
+}
+
+.feature-post .thumbnail .author-info {
+    padding: 20px 5px 20px 40px;
+    text-align: left;
+    min-height: 80px;
+    background: #2c3840;
+    float: left;
+    width: 100%;
+}
+
+.post .post-type {
+    float: left;
+    width: 100%;
+}
+
+.post .author-info {
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    min-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background: #fcfcfc;
+    float: left;
+    width: 100%;
+}
+
+.vt-post.post .author-info {
+    border-radius: 0px 0px 0px 3px;
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+    padding: 15px 12px 15px 12px;
+}
+.feature-post .thumbnail .author-info {
+    padding: 20px 5px 20px 40px;
+    text-align: left;
+    min-height: 80px;
+    background: #2c3840;
+    float: left;
+    width: 100%;
+}
+
+.post {
+    width: 100%;
+    float: left;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    background: #fff;
+    margin-bottom: 40px;
+    border-radius: 3px;
+}
+
+.post .post-img a img {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: auto;
+    border-radius: 3px 3px 0px 0px;
+}
+
+img.wp-post-image {
+    max-width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
+.p-content{
+    font-size: 25px;
+}
+.caption{
+    color: black;
+}
+
+.list-inline{
+    font-weight: bold;
+}
 
 @media(max-width:$lg){
     .instructions-container{
@@ -291,5 +368,12 @@ img.image{
         
         height: 500px;
         
+    }
+
+    .caption{
+        padding: 10px;
+    }
+    .p-content{
+        font-size: 15px;
     }
 }

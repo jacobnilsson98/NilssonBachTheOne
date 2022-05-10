@@ -3,7 +3,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-get_header();
+get_header(); 
 
 
 //vars 
@@ -14,6 +14,17 @@ $instructions = get_field('instructions');
 $instructions = get_field('instructions');
 $cats = get_the_category($id);
 
+?>
+
+<div class="py-6 bg-light">
+    <div class="container text-center">
+        <h1 class="display-4">	
+<h1><?php _e( 'Dish', 'picostrap5' ); ?></h1>
+
+    </div>
+</div>
+
+<?php
 
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post();
@@ -21,16 +32,11 @@ if ( have_posts() ) :
     if (get_the_post_thumbnail_url()){ 
         ?>
         
-        <div class="d-flex container-fluid" style="height:50vh;background:url(<?php echo get_the_post_thumbnail_url(); ?>)  center / cover no-repeat;"></div>
+        <div class="d-flex container-fluid" style="height:60vh;background:url(<?php echo get_the_post_thumbnail_url(); ?>)  center / cover no-repeat;"></div>
     <?php } else {
         
         ?>
-        <div class="py-6 bg-light">
-    <div class="container text-center">
-        <h1 class="display-4"><?php the_title(); ?></h1>
-        
-  </div>
-</div><div class="d-flex container-fluid" style="height:20vh;"></div>
+  
         
         
 
@@ -39,23 +45,98 @@ if ( have_posts() ) :
     
     
 
-    	</div><!-- #content -->
+    	
 
-        <div class="d-flex justify-content-center">
-            <div class="image-container">
-	<?php if( $featured_image ): ?>
-			<img class="image" src="<?php echo $featured_image['url']; ?>" alt="<?php echo $featured_image['alt']; ?>" />
+
+
+
+        <!-- servings -->
+
+        
+        <div class="row">
+        <div class="col-lg-12">
+            <div class="detail text-center text-muted mb-5 mt-5">
+		<?php if( $servings ): ?>
+            <h3><?php _e( 'Servings', 'picostrap5' ); ?></h3>
+		<?php echo print_r($servings);?>
+        
 		<?php endif; ?>
-            </div>
+        </div>
+        </div>
         </div>
 
- <!-- Show the tag/s on the specific recipe-->
+
+            
+
+
+
+        <!-- instructions -->
+
+
+        <section class="section"> 
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+        <h3 class="text-dark"><?php _e( 'Instructions', 'picostrap5' ); ?></h3>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="detail mt-2 p-4">
+                <div class="detail-desc">
+                <?php if( $instructions ): ?>
+           
+		<?php echo print_r($instructions);?>
+        
+		<?php endif; ?>
+		        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- ingredients -->
+
+        <section class="section"> 
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+        <h3 class="text-dark"><?php _e( 'Ingredients', 'picostrap5' ); ?></h3>
+        </div>
+    </div>
+        
+        <div class="row">
+        <div class="col-lg-12">
+            <div class="detail text-center text-muted mb-5 mt-5">
+                <div class="detail-ingredient">
+		<?php if( $ingredients ): ?>
+                
+		        <?php echo print_r($ingredients);?>
+		        <?php endif; ?>
+        </div>
+        </div>
+        </div>
+        </div>
+       
+
+        
+        </section>
+        
+        
+        
+
+
+
+         <!-- Show the tag/s on the specific recipe-->
  
-        <?php 
+         <?php 
         $taxonomy = 'bs_recipie_tag';
         $terms = get_object_term_cache( $post->ID, $taxonomy );
         if( ! empty( $terms)){
-            echo "<h3>Recipe Categories</h3>";
+            echo "<h3>Category/Tag</h3>";
             $output = '';
 
         foreach($terms as $term) {
@@ -67,46 +148,15 @@ if ( have_posts() ) :
         }
         ?>
 
+<!-- category -->
 
+<?php foreach ( $cats as $cat ): ?>
 
-        <div class="d-flex justify-content-center">
-		<?php if( $servings ): ?>
-            <div class="servings"><h3><?php _e( 'Servings', 'picostrap5' ); ?></h3>
-		<div class="amount_servings"><?php echo print_r($servings);?></div>
-        </div>
-		<?php endif; ?>
-        </div>
+<a href="<?php echo get_category_link($cat->cat_ID); ?>">
+<?php echo $cat->name; ?>
+</a>
 
-        <div class="d-flex justify-content-center">
-		<?php if( $ingredients ): ?>
-            <div class="ingredients"><h3><?php _e( 'Ingredients', 'picostrap5' ); ?></h3>
-		<div class="amount_ingredients"></div><?php echo print_r($ingredients);?></div>
-        </div>
-		<?php endif; ?>
-        </div>
-
-        <div class="d-flex justify-content-center">
-            <div class="instructions-container"
-		<?php if( $instructions ): ?>
-            <div class="instuctions"><h3><?php _e( 'Instructions', 'picostrap5' ); ?></h3>
-		<div class="amount_instructions"></div><?php echo print_r($instructions);?></div>
-        </div>
-		<?php endif; ?>
-        </div>
-
-        <?php foreach ( $cats as $cat ): ?>
-
-        <a href="<?php echo get_category_link($cat->cat_ID); ?>">
-        <?php echo $cat->name; ?>
-        </a>
-
-        <?php endforeach; ?>
-
-        
-
-        
-        
-        </div>
+<?php endforeach; ?>
             
 
 

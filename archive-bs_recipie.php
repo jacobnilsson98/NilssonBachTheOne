@@ -19,7 +19,7 @@ get_header(); ?>
 <div class="py-6 bg-light">
     <div class="container text-center">
         <h1 class="display-4">	
-<h1><?php _e( 'Recipe', 'picostrap5' ); ?></h1></h1>
+<h1><?php _e( 'Recipe', 'picostrap5' ); ?></h1>
 
     </div>
 </div>
@@ -33,8 +33,9 @@ get_header(); ?>
                 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
                     <div class="post-type post-img">
   <!-- img -->
+  <div class="img-container">
    <?php the_post_thumbnail(); ?>
-  
+  </div>
    </div>
    <!-- Category + date -->
    <div class="author-info author-info-2">
@@ -75,9 +76,15 @@ Category: <?php the_category(', ') ?>
 <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
 
+<!-- content -->
+
+<div class="p-content">
 <?php the_content('Read the rest of this entry &raquo;'); ?>
+    </div>
 </div>
-            </div>
+</div>
+    </article>
+    </div>
 
 
 
